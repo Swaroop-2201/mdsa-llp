@@ -1,714 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LegalNest LLP</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MDSA LegalNest LLP</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Disclaimer Modal -->
+  <div class="modal fade" id="disclaimerModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
 
-<!-- Disclaimer Modal -->
-<div class="modal fade" id="disclaimerModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Disclaimer</h5>
+        </div>
 
-      <div class="modal-header">
-        <h5 class="modal-title">Disclaimer</h5>
+        <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+          <p>
+            In accordance with the rules of the Bar Council of India, law firms are prohibited from soliciting work and
+            advertising. By accessing this website (mdsalegalnestllp), you acknowledge and agree that there has been no
+            advertisement, solicitation, invitation, or inducement from us or any of our members to solicit work through
+            this website.
+          </p>
+
+          <p>
+            The use of this site does not create a lawyer-client relationship and should not be construed as an
+            invitation to form such a relationship or as legal advice.
+          </p>
+
+          <p>
+            The information on this website is provided for general informational purposes only. We do not guarantee
+            that the content is current, complete, or accurate. We are not responsible for any consequences resulting
+            from actions taken by users based on the information provided on this website.
+          </p>
+
+          <p><strong>I accept the above.</strong></p>
+        </div>
+
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-dark px-4" id="acceptDisclaimer">
+            Accept
+          </button>
+        </div>
       </div>
-
-      <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
-        <p>
-          In accordance with the rules of the Bar Council of India, law firms are prohibited from soliciting work and advertising. By accessing this website (mdsalegalnestllp), you acknowledge and agree that there has been no advertisement, solicitation, invitation, or inducement from us or any of our members to solicit work through this website.
-        </p>
-
-        <p>
-          The use of this site does not create a lawyer-client relationship and should not be construed as an invitation to form such a relationship or as legal advice.
-        </p>
-
-        <p>
-          The information on this website is provided for general informational purposes only. We do not guarantee that the content is current, complete, or accurate. We are not responsible for any consequences resulting from actions taken by users based on the information provided on this website.
-        </p>
-
-        <p><strong>I accept the above.</strong></p>
-      </div>
-
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-dark px-4" id="acceptDisclaimer">
-          Accept
-        </button>
-      </div>
-
     </div>
   </div>
-</div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-<div class="container">
-
-<a class="navbar-brand d-flex align-items-center" href="index.html">
-<img src="images/logo.png" width="40" class="me-2">
-LegalNest LLP
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link" href="#index">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#partners">Partners</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#history">History</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#services">Services</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#contact">Contact</a>
-</li>
-
-</ul>
-</div>
-
-</div>
-</nav>
-
-<section class="hero-section" id="index">
-
-<div class="hero-overlay"></div>
-
-<div class="container hero-content">
-<div class="row align-items-center">
-
-<!-- RIGHT IMAGE -->
-<div class="col-lg-6 text-center">
-<img src="images/logo.png" class="img-fluid hero-image">
-</div>
-
-
-<!-- LEFT CONTENT -->
-<div class="col-lg-6 text-white">
-<h1 class="hero-title">MDSA LegalNest LLP</h1>
-
-<p class="hero-subtitle">
-Professional legal and consultation platform connecting you with trusted experts.
-We provide expert legal advice, handle court litigation matters, and draft
-        agreements, transfer deeds, and documentation related to movable and
-        immovable property.
-        With more than <strong>30 years of legal excellence</strong>, our firm expanded
-        and transformed into <strong>MDSA Legalnest LLP in 2025</strong>, combining
-        traditional legal values with modern legal practices.
-</p>
-</div>
-
-
-
-</div>
-</div>
-
-</section>
-
-
-
-<section class="partners-section" id="partners">
-
-<div class="container">
-
-<h2 class="text-center mb-5 partners-heading">Designated Partners</h2>
-
-<div class="row g-4 justify-content-center">
-
-<!-- Partner 1 -->
-<div class="col-lg-3 col-md-6">
-<div class="partner-card text-center">
-
-<img src="images/p1.png" class="partner-photo mb-3">
-
-<h5>Adv Madhuri Atul Phadke.</h5>
-<p class="qualification">B.Sc. LL.B. MA(Phi), MA(Yogashastra), Diploma in Marriage Counselling.</p>
-
-</div>
-</div>
-
-<!-- Partner 2 -->
-<div class="col-lg-3 col-md-6">
-<div class="partner-card text-center">
-
-<img src="images/p2.png" class="partner-photo mb-3">
-
-<h5>Sanad No. MAH/159/2011</h5>
-<p class="qualification">Qualification. B.L.S.L.L.B, Diploma in Cyber Law, Marriage Counseling</p>
-
-</div>
-</div>
-
-<!-- Partner 3 -->
-<div class="col-lg-3 col-md-6">
-<div class="partner-card text-center">
-
-<img src="images/p3.png" class="partner-photo mb-3">
-
-<h5>Sudhanva Milind Kelkar 
-</h5>
-<p class="qualification">SANAD NO. MAH/1658/2022
-Qualification BALLB,
-DLL, corporate certificate</p>
-
-</div>
-</div>
-
-<!-- Partner 4 -->
-<div class="col-lg-3 col-md-6">
-<div class="partner-card text-center">
-
-<img src="images/p4.png" class="partner-photo mb-3">
-
-<h5>Anuradha Shekhar 
-Mate
-</h5>
-<p class="qualification">MAH/4725/2018 
-BSL LLB</p>
-
-</div>
-</div>
-
-</div>
-</div>
-
-</section>
-
-
-<section class="history-section full-height" id="history">
-
-<div class="history-overlay"></div>
-
-<div class="container history-content">
-
-<h2 class="text-center mb-5 history-title">Our History</h2>
-
-<div class="timeline">
-
-<!-- Stage 1 -->
-<div class="history-card">
-<h4>1988</h4>
-<p>Company Founded</p>
-</div>
-
-<div class="timeline-arrow">➜</div>
-
-<!-- Stage 2 -->
-<div class="history-card">
-<h4>2018</h4>
-<p>Completed 30 Years</p>
-</div>
-
-<div class="timeline-arrow">➜</div>
-
-<!-- Stage 3 -->
-<div class="history-card">
-<h4>2025</h4>
-<p>Converted into MDSA LegalNest LLP</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Services Navigation Section -->
-<section class="services-nav-section" id="services">
-
-<div class="container">
-<h2 class="text-center mb-5 legal-services-title">Our Legal Services</h2>
-
-<div class="row g-4 justify-content-center">
-
-<!-- Civil Cases -->
-<div class="col-lg-3 col-md-6">
-<a href="#civil" class="service-link">
-<div class="service-card text-center">
-<h5>Civil Cases</h5>
-</div>
-</a>
-</div>
-
-<!-- Family Cases -->
-<div class="col-lg-3 col-md-6">
-<a href="#family" class="service-link">
-<div class="service-card text-center">
-<h5>Family Cases</h5>
-</div>
-</a>
-</div>
-
-<!-- Cheque Bounce -->
-<div class="col-lg-3 col-md-6">
-<a href="#cheque" class="service-link">
-<div class="service-card text-center">
-<h5>Cheque Bounce Cases</h5>
-</div>
-</a>
-</div>
-
-<!-- Conveyencing -->
-<div class="col-lg-3 col-md-6">
-<a href="#conveyencing" class="service-link">
-<div class="service-card text-center">
-<h5>Conveyencing</h5>
-</div>
-</a>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- Civil Cases -->
-<section class="service-detail-section" id="civil">
-
-<div class="container">
-<div class="row align-items-center">
-
-<div class="col-lg-6 text-white order-2 order-lg-1">
-<h2 class="card-services-title">Civil Cases</h2>
-<p>
-We handle property disputes, contract disagreements, recovery suits, 
-and other civil legal matters. Our team ensures professional legal 
-representation and structured documentation support.
-</p>
-
-<ul class="service-list">
-<li>Partition Suit</li>
-<li>Specific Relief</li>
-<li>Land Acquisition</li>
-<li>Injunction matters</li>
-<li>Heirship Certificate, Succession Certificate, Probate</li>
-<li>Adverse possession Cases</li>
-<li>Money Recovery Suit</li>
-<li>Land-Lord tenant Issue</li>
-<li>Execution</li>
-</ul>
-
-</div>
-
-<div class="col-lg-6 text-center order-1 order-lg-2">
-<img src="images/civil-case.jpg" class="img-fluid service-image">
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- Family Cases -->
-<section class="service-detail-section" id="family">
-
-<div class="container">
-<div class="row align-items-center">
-
-<div class="col-lg-6 text-center order-1 order-lg-1">
-<img src="images/family-case-law.jpg" class="img-fluid service-image">
-</div>
-
-<div class="col-lg-6 text-white order-2 order-lg-2">
-<h2 class="card-services-title">Family Cases</h2>
-
-<p>
-Legal support for divorce, child custody, maintenance, domestic 
-violence matters, and family dispute resolution with confidential 
-and sensitive handling.
-</p>
-
-<ul class="service-list">
-<li>Divorce Petition</li>
-<li>Divorce by Mutual Consent</li>
-<li>Restitution Petition</li>
-<li>Domestic violence cases</li>
-<li>Maintenance Application</li>
-<li>Judicial Separation</li>
-<li>Execution Petition</li>
-</ul>
-
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- Cheque Bounce -->
-<section class="service-detail-section" id="cheque">
-
-<div class="container">
-<div class="row align-items-center">
-
-<div class="col-lg-6 text-white order-2 order-lg-1">
-
-<h2 class="card-services-title">Cheque Bounce Cases</h2>
-
-<p>
-Professional legal assistance under Negotiable Instruments Act 
-for cheque dishonour disputes including legal notices, case filing 
-and representation.
-</p>
-
-<ul class="service-list">
-
-<li>Section 138 of The Negotiable Instrument Act 1881</li>
-
-<li>Section 141 of The Negotiable Instrument Act 1881</li>
-
-<li>Vicarious liability of companies in cases of dishonour</li>
-
-</ul>
-
-</div>
-
-<div class="col-lg-6 text-center order-1 order-lg-2">
-
-<img src="images/cheque.jpeg" class="img-fluid service-image">
-
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- Conveyancing -->
-<section class="service-detail-section" id="conveyencing">
-
-<div class="container">
-<div class="row align-items-center">
-
-<div class="col-lg-6 text-center order-1 order-lg-1">
-
-<img src="images/conveyancing.jpeg" class="img-fluid service-image">
-
-</div>
-
-<div class="col-lg-6 text-white order-2 order-lg-2">
-
-<h2 class="card-services-title">Conveyencing</h2>
-
-<p>
-We provide legal documentation support for property transfers, 
-agreements, title verification, registration process, and builder 
-liaison services.
-</p>
-
-<ul class="service-list">
-
-<li>All Types Of Property Related Documents</li>
-
-<li>Leave and license Agreement, Sale Deed, Lease deed, Release Deed, MOU, Gift Deed, Notice Of Lis Pendance, Transfer Deed etc.</li>
-
-<li>Will- Notarize will and Registered will</li>
-
-<li>Title Search Report</li>
-
-<li>Society Registration</li>
-
-<li>Deemed Conveyance</li>
-
-<li>Partnership Deed</li>
-
-</ul>
-
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- Other Area -->
-<section class="service-detail-section" id="other">
-
-<div class="container">
-<div class="row align-items-center">
-
-<div class="col-lg-6 text-white order-2 order-lg-1">
-
-<h2 class="card-services-title">Other Area of Work</h2>
-
-<p>
-
-Along with our core legal services, MDSA LegalNest LLP also provides comprehensive assistance across various specialized legal and administrative matters.
-
-</p>
-
-<ul class="service-list">
-
-<li>Labour Matters</li>
-
-<li>Consumer matters</li>
-
-<li>Environmental issues</li>
-
-<li>All Revenue matters</li>
-
-<li>Collector Cases</li>
-
-<li>Land record Matters</li>
-
-<li>Divisional Commissioner matters</li>
-
-<li>Criminal Bail Applications</li>
-
-</ul>
-
-</div>
-
-<div class="col-lg-6 text-center order-1 order-lg-2">
-
-<img src="images/other.png" class="img-fluid service-image">
-
-</div>
-
-</div>
-</div>
-</section>
-
-
-
-<!-- Services -->
-
-
-<!-- ABOUT US SECTION -->
-<section class="about-section" id="about">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<!-- LEFT SIDE -->
-<div class="col-lg-6 text-white">
-
-<div class="work-area">
-
-<h3 class="work-title">We Work At</h3>
-
-<div class="work-list">
-
-<span>Supreme Court of India</span>
-<span>High Court</span>
-<span>District Court Pune & Maharashtra</span>
-<span>Family Court</span>
-<span>Labour Court</span>
-<span>Consumer Court</span>
-<span>All Other Tribunals</span>
-<span>Registrar of Firms</span>
-<span>Registrar of Societies</span>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- RIGHT SIDE MAP -->
-<div class="col-lg-6">
-
-<div class="map-container">
-
-<iframe
-src="https://www.google.com/maps?q=Pune,Maharashtra&output=embed"
-width="100%"
-height="350"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</div>
-
-</div>
-
-
-</div>
-</div>
-</section>
-
-
-<!-- CONTACT US SECTION -->
-<section class="contact-section" id="contact">
-  <div class="container contact-container">
-
-    <!-- CONTACT FORM -->
-    <div class="contact-form">
-
-      <h2>Contact Us</h2>
-      <p>Get in touch with us for professional legal assistance.</p>
-
-      <form onsubmit="sendToWhatsApp(); return false;">
-
-        <div class="form-group">
-          <input type="text" id="name" placeholder="Full Name" required>
-        </div>
-
-        <div class="form-group">
-          <input type="tel" id="number" placeholder="Contact Number" maxlength="10" required>
-        </div>
-
-        <div class="form-group">
-          <input type="email" id="email" placeholder="Email Address" required>
-        </div>
-
-        <!-- NEW ENQUIRY FIELD -->
-        <div class="form-group">
-          <textarea id="message" placeholder="Enquiry" rows="4" required></textarea>
-        </div>
-
-        <button type="submit" class="contact-btn">
-          Send Message
-        </button>
-
-      </form>
-
-    </div>
-
-    <!-- CONTACT IMAGE -->
-    <div class="contact-image">
-      <img src="images/contact.png" alt="Contact Us">
-    </div>
-
-  </div>
-</section>
-
-<script>
-
-function sendToWhatsApp(){
-
-let name = document.getElementById("name").value.trim();
-let number = document.getElementById("number").value.trim();
-let email = document.getElementById("email").value.trim();
-let message = document.getElementById("message").value.trim();
-
-
-// NAME VALIDATION
-let namePattern = /^[A-Za-z ]{3,}$/;
-
-if(!namePattern.test(name)){
-alert("Please enter valid name (minimum 3 letters, only alphabets)");
-return;
-}
-
-
-// PHONE VALIDATION (10 digit)
-let phonePattern = /^[0-9]{10}$/;
-
-if(!phonePattern.test(number)){
-alert("Please enter valid 10 digit mobile number");
-return;
-}
-
-
-// EMAIL VALIDATION
-let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if(!emailPattern.test(email)){
-alert("Please enter valid email address");
-return;
-}
-
-
-// ENQUIRY VALIDATION
-if(message.length < 5){
-alert("Please enter your enquiry (minimum 5 characters)");
-return;
-}
-
-
-// WHATSAPP SEND
-
-let whatsappNumber = "919876543210"; // PUT LAWYER NUMBER
-
-let url = "https://wa.me/" + whatsappNumber + "?text="
-+ "New Client Enquiry:%0a%0a"
-+ "Name: " + name + "%0a"
-+ "Phone: " + number + "%0a"
-+ "Email: " + email + "%0a"
-+ "Enquiry: " + message;
-
-window.open(url, "_blank");
-
-}
-
-</script>
-
-
-
-<!-- Footer -->
-<!-- Footer Section -->
-<footer class="footer-section">
-  <div class="container">
-    <div class="row">
-
-      <!-- Firm Details -->
-      <div class="col-md-6 mb-3">
-        <h5 class="footer-title">LegalNest LLP</h5>
-
-        <p class="footer-text">
-          <strong>Adv. Sudhanva Milind Kelkar</strong><br>
-          Sanad No. MAH/1658/2022 <br>
-          Phone: 9763049897 / 7276264258
-        </p>
-      </div>
-
-      <!-- Office Address -->
-      <div class="col-md-6 mb-3">
-        <h5 class="footer-title">Office Address</h5>
-
-        <p class="footer-text">
-          293 Shaniwar Peth,<br>
-          Opposite Girish Bapat House,<br>
-          Pune – 411030
-        </p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.png" width="40" class="me-2">
+        MDSA LegalNest LLP
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#index">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#partners">Partners</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#history">History</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services/civil.html">Civil Cases</a></li>
+              <li><a class="dropdown-item" href="services/family.html">Family Cases</a></li>
+              <li><a class="dropdown-item" href="services/cheque-bounce.html">Cheque Bounce Cases</a></li>
+              <li><a class="dropdown-item" href="services/conveyancing.html">Conveyancing</a></li>
+              <li><a class="dropdown-item" href="services/other.html">Other Areas</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
       </div>
 
     </div>
+  </nav>
 
-    <!-- Bottom Copyright -->
-    <div class="footer-bottom text-center mt-4">
-      <p>© 2026 LegalNest LLP. All Rights Reserved.</p>
+  <section class="hero-section" id="index">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center">
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-lg-6 text-center">
+          <img src="images/logo.png" class="img-fluid hero-image">
+        </div>
+
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-6 text-white">
+          <h1 class="hero-title">MDSA LegalNest LLP</h1>
+
+          <p class="hero-subtitle">
+            Professional legal and consultation platform connecting you with trusted experts.
+            We provide expert legal advice, handle court litigation matters, and draft
+            agreements, transfer deeds, and documentation related to movable and
+            immovable property.
+
+          </p>With more than
+          <strong>30 years of legal excellence</strong>,
+          our firm expanded and transformed into
+          <strong>MDSA Legalnest LLP in 2025</strong>, combining
+          traditional legal values with modern legal practices.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</footer>
+  <section class="partners-section" id="partners">
+    <div class="container">
+      <h2 class="text-center mb-5 partners-heading">Designated Partners</h2>
+      <div class="row g-4 justify-content-center">
+
+        <!-- Partner 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="partner-card text-center">
+
+            <img src="images/p1.png" class="partner-photo mb-3">
+
+            <h5>Adv Madhuri Atul Phadke.</h5>
+            <p class="qualification">B.Sc. LL.B. MA(Phi), MA(Yogashastra), Diploma in Marriage Counselling.</p>
+
+          </div>
+        </div>
+
+        <!-- Partner 2 -->
+         <div class="col-lg-3 col-md-6">
+          <div class="partner-card text-center">
+
+            <img src="images/p3.png" class="partner-photo mb-3">
+
+            <h5>Sudhanva Milind Kelkar
+            </h5>
+            <p class="qualification">SANAD NO. MAH/1658/2022
+              Qualification BALLB,
+              DLL, corporate certificate</p>
+
+          </div>
+        </div>
+        
+        <!-- Partner 3 -->
+         <div class="col-lg-3 col-md-6">
+          <div class="partner-card text-center">
+
+            <img src="images/p2.png" class="partner-photo mb-3">
+
+            <h5>Dipali Gonjare</h5>
+            <p class="qualification">Sanad No. MAH/159/2011
+              Qualification. B.L.S.L.L.B, Diploma in Cyber Law, Marriage Counseling</p>
+
+          </div>
+        </div>
+
+        <!-- Partner 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="partner-card text-center">
+
+            <img src="images/p4.png" class="partner-photo mb-3">
+
+            <h5>Anuradha Shekhar
+              Mate
+            </h5>
+            <p class="qualification">MAH/4725/2018
+              BSL LLB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-section full-height" id="history">
+    <div class="history-overlay"></div>
+
+    <div class="container history-content">
+      <h2 class="text-center mb-5 history-title">Our History</h2>
+
+      <div class="timeline">
+
+        <!-- Stage 1 -->
+        <div class="history-card">
+          <h4>1988</h4>
+          <p><strong>Company Founded</strong></p>
+          <small>Established with a vision to deliver ethical, client-focused legal solutions.</small>
+        </div>
+
+        <div class="timeline-arrow">➜</div>
+
+        <!-- Stage 2 -->
+        <div class="history-card">
+          <h4>2018</h4>
+          <p><strong>Completed 30 Years</strong></p>
+          <small>Three decades of trusted advocacy, courtroom excellence, and client confidence.</small>
+        </div>
+
+        <div class="timeline-arrow">➜</div>
+
+        <!-- Stage 3 -->
+        <div class="history-card">
+          <h4>2025</h4>
+          <p><strong>Converted into MDSA LegalNest LLP</strong></p>
+          <small>Transitioned into a modern LLP structure while preserving our legacy of integrity.</small>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Navigation Section -->
+  <section class="services-nav-section" id="services">
+    <div class="container">
+      <h2 class="text-center mb-5 legal-services-title">Our Legal Services</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Civil Cases -->
+        <div class="col-lg-3 col-md-6">
+          <a href="services/civil.html" class="service-link">
+            <div class="service-card text-center">
+              <h5>Civil Cases</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Family Cases -->
+        <div class="col-lg-3 col-md-6">
+          <a href="services/family.html" class="service-link">
+            <div class="service-card text-center">
+              <h5>Family Cases</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Cheque Bounce -->
+        <div class="col-lg-3 col-md-6">
+          <a href="services/cheque-bounce.html" class="service-link">
+            <div class="service-card text-center">
+              <h5>Cheque Bounce Cases</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Conveyancing -->
+        <div class="col-lg-3 col-md-6">
+          <a href="services/conveyancing.html" class="service-link">
+            <div class="service-card text-center">
+              <h5>Conveyancing</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Other -->
+        <div class="col-lg-3 col-md-6">
+          <a href="services/other.html" class="service-link">
+            <div class="service-card text-center">
+              <h5>Other Areas</h5>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="about-section" id="about">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <!-- LEFT SIDE -->
+        <div class="col-lg-6 text-white">
+
+          <div class="work-area">
+
+            <h3 class="work-title">We Work At</h3>
+
+            <div class="work-list">
+
+              <span>Supreme Court of India</span>
+              <span>High Court</span>
+              <span>District Court Pune & Maharashtra</span>
+              <span>Family Court</span>
+              <span>Labour Court</span>
+              <span>Consumer Court</span>
+              <span>All Other Tribunals</span>
+              <span>Registrar of Firms</span>
+              <span>Registrar of Societies</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT SIDE MAP -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2042935277955!2d73.84852347579707!3d18.519667969200604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1002a05cf41%3A0x3b0f5fcfb5faa5eb!2sMDSA%20Legalnest%20LLP!5e0!3m2!1sen!2sin!4v1771596621095!5m2!1sen!2sin"
+            width="100%" height="350" style="border:0; border-radius:10px;" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+  <!-- CONTACT US SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-container">
 
-  // Show disclaimer modal on page load
-  var disclaimerModal = new bootstrap.Modal(document.getElementById('disclaimerModal'));
-  disclaimerModal.show();
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
 
-  // Close modal when Accept is clicked
-  document.getElementById("acceptDisclaimer").addEventListener("click", function () {
-    disclaimerModal.hide();
-  });
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for professional legal assistance.</p>
 
-});
-</script>
+        <form onsubmit="sendToWhatsApp(); return false;">
+
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="number" placeholder="Contact Number" maxlength="10" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address" required>
+          </div>
+
+          <!-- NEW ENQUIRY FIELD -->
+          <div class="form-group">
+            <textarea id="message" placeholder="Enquiry" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-btn">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+      <!-- CONTACT IMAGE -->
+      <div class="contact-image">
+        <img src="images/contact.png" alt="Contact Us">
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+
+    function sendToWhatsApp() {
+
+      let name = document.getElementById("name").value.trim();
+      let number = document.getElementById("number").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let message = document.getElementById("message").value.trim();
+
+
+      // NAME VALIDATION
+      let namePattern = /^[A-Za-z ]{3,}$/;
+
+      if (!namePattern.test(name)) {
+        alert("Please enter valid name (minimum 3 letters, only alphabets)");
+        return;
+      }
+
+
+      // PHONE VALIDATION (10 digit)
+      let phonePattern = /^[0-9]{10}$/;
+
+      if (!phonePattern.test(number)) {
+        alert("Please enter valid 10 digit mobile number");
+        return;
+      }
+
+
+      // EMAIL VALIDATION
+      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailPattern.test(email)) {
+        alert("Please enter valid email address");
+        return;
+      }
+
+
+      // ENQUIRY VALIDATION
+      if (message.length < 5) {
+        alert("Please enter your enquiry (minimum 5 characters)");
+        return;
+      }
+
+
+      // WHATSAPP SEND
+
+      let whatsappNumber = "919876543210"; // PUT LAWYER NUMBER
+
+      let url = "https://wa.me/" + whatsappNumber + "?text="
+        + "New Client Enquiry:%0a%0a"
+        + "Name: " + name + "%0a"
+        + "Phone: " + number + "%0a"
+        + "Email: " + email + "%0a"
+        + "Enquiry: " + message;
+
+      window.open(url, "_blank");
+
+    }
+
+  </script>
+
+
+
+  <!-- Footer -->
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+
+        <!-- Firm Details -->
+        <div class="col-md-6 mb-3">
+          <h5 class="footer-title">MDSALegalNest LLP</h5>
+
+          <p class="footer-text">
+            <strong>Adv. Sudhanva Milind Kelkar</strong><br>
+            Sanad No. MAH/1658/2022 <br>
+            Phone: 9763049897 / 7276264258
+          </p>
+        </div>
+
+        <!-- Office Address -->
+        <div class="col-md-6 mb-3">
+          <h5 class="footer-title">Office Address</h5>
+
+          <p class="footer-text">
+            293 Shaniwar Peth,<br>
+            Opposite Girish Bapat House,<br>
+            Pune – 411030
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom text-center mt-4">
+        <p class="mb-1">© 2026 MDSA LegalNest LLP. All Rights Reserved.</p>
+        <p class="mb-0" style="font-size:14px; opacity:0.8;">
+          Made with <span style="color:#ff4d4d;">❤</span> by EDITH Infographics
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // Check if disclaimer was already accepted
+      if (!localStorage.getItem("disclaimerAccepted")) {
+
+        var disclaimerModal = new bootstrap.Modal(document.getElementById('disclaimerModal'));
+        disclaimerModal.show();
+
+        // When Accept button is clicked
+        document.getElementById("acceptDisclaimer").addEventListener("click", function () {
+          localStorage.setItem("disclaimerAccepted", "true");
+          disclaimerModal.hide();
+        });
+
+      }
+
+    });
+  </script>
 </body>
+
 </html>
