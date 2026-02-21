@@ -503,11 +503,24 @@ h3 {
 /* Services Navigation Section */
 
 .services-nav-section {
-  min-height: 60vh;
+  /* min-height: 60vh; */
   background: linear-gradient(135deg, #0d0d0d, #211e1c);
   display: flex;
   align-items: center;
   padding: 60px 0;
+}
+
+.services-nav-section h1 {
+  color: #d4af37; /* gold */
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.services-nav-section p {
+  color: #e6c76b; /* soft gold */
+  font-size: 18px;
+  /* max-width: 700px; */
+  margin: 15px auto 0;
 }
 
 /* Card Link Remove Underline */
@@ -546,6 +559,51 @@ h3 {
     max-width: 300px;
   }
 
+}
+
+/* Service Detail Section */
+.service-page-content {
+  background-color: #1a1305;  
+  padding: 80px 20px;
+}
+
+/* Golden Heading */
+.service-page-content h2 {
+  color: #d4af37;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Golden Paragraph */
+.service-page-content p {
+  color: #e6c76b;
+  font-size: 17px;
+}
+
+/* Golden List Items */
+.service-page-content ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.service-page-content ul li {
+  color: #f0d98a;
+  margin-bottom: 8px;
+}
+
+/* Gold Button (override Bootstrap dark safely inside this section only) */
+.service-page-content .btn-dark {
+  background-color: #d4a237;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+
+.service-page-content .btn-dark:hover {
+  background-color: #f5d76e;
+  color: #000;
 }
 
 /* ===== Brown Theme Navbar ===== */
@@ -810,3 +868,4 @@ textarea {
     margin-top: 0;
   }
 }
+
