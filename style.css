@@ -869,3 +869,14 @@ textarea {
   }
 }
 
+/* Social Icons in Navbar */
+.social-icon i {
+  font-size: 18px;
+  color: #d4af37;
+  transition: 0.3s ease;
+}
+
+.social-icon i:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
