@@ -617,8 +617,9 @@ h3 {
 /* Brand Text */
 
 .navbar-custom .navbar-brand {
-  color: white;
+  color: #d4af37;
   font-weight: 600;
+  font-family: 'Libre Baskerville', serif;
 }
 
 /* Nav Links */
@@ -879,4 +880,22 @@ textarea {
 .social-icon i:hover {
   color: #ffffff;
   transform: scale(1.2);
+}
+
+/* Services Dropdown Background */
+.dropdown-menu {
+  background-color: #2b1d0e; /* dark brown */
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Dropdown Items */
+.navbar .dropdown-item {
+  color: #d4af37; /* gold text */
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar .dropdown-item:hover {
+  background-color: #3a2816; /* slightly lighter brown */
+  color: #ffffff;
 }
