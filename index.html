@@ -368,52 +368,58 @@
     </div>
   </section>
 
-
   <!-- CONTACT US SECTION -->
   <section class="contact-section" id="contact">
-    <div class="container contact-container">
 
-      <!-- CONTACT FORM -->
-      <div class="contact-form">
+    <div class="container">
 
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for professional legal assistance.</p>
+      <div class="row align-items-center contact-wrapper">
 
-        <form onsubmit="sendToWhatsApp(); return false;">
+        <!-- CONTACT FORM -->
+        <div class="col-lg-6 contact-form">
 
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Full Name" required>
-          </div>
+          <h2 class="contact-title">Contact Us</h2>
+          <p class="contact-subtitle">
+            Get in touch with us for professional legal assistance.
+          </p>
 
-          <div class="form-group">
-            <input type="tel" id="number" placeholder="Contact Number" maxlength="10" required>
-          </div>
+          <form onsubmit="sendToWhatsApp(); return false;">
 
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Email Address" required>
-          </div>
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Full Name" required>
+            </div>
 
-          <!-- NEW ENQUIRY FIELD -->
-          <div class="form-group">
-            <textarea id="message" placeholder="Enquiry" rows="4" required></textarea>
-          </div>
+            <div class="form-group">
+              <input type="tel" id="number" placeholder="Contact Number" maxlength="10" required>
+            </div>
 
-          <button type="submit" class="contact-btn">
-            Send Message
-          </button>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email Address" required>
+            </div>
 
-        </form>
+            <div class="form-group">
+              <textarea id="message" placeholder="Enquiry" rows="4" required></textarea>
+            </div>
 
-      </div>
+            <button type="submit" class="contact-btn">
+              Send Message
+            </button>
 
-      <!-- CONTACT IMAGE -->
-      <div class="contact-image">
-        <img src="images/contact.png" alt="Contact Us">
+          </form>
+
+        </div>
+
+
+        <!-- CONTACT IMAGE -->
+        <div class="col-lg-6 contact-image text-center">
+          <img src="images/contact.png" alt="Contact Us">
+        </div>
+
       </div>
 
     </div>
-  </section>
 
+  </section>
   <script>
 
     function sendToWhatsApp() {
