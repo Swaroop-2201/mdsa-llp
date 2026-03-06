@@ -543,15 +543,27 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
 
-      // Check if disclaimer was already accepted
-      if (!localStorage.getItem("disclaimerAccepted")) {
+      const disclaimerKey = "disclaimerAcceptedTime";
+      const now = new Date().getTime();
+      const storedTime = localStorage.getItem(disclaimerKey);
 
-        var disclaimerModal = new bootstrap.Modal(document.getElementById('disclaimerModal'));
+      // 24 hours in milliseconds
+      const expiryTime = 24 * 60 * 60 * 1000;
+
+      // If not accepted before OR 24 hours passed
+      if (!storedTime || (now - storedTime) > expiryTime) {
+
+        var disclaimerModal = new bootstrap.Modal(
+          document.getElementById('disclaimerModal')
+        );
+
         disclaimerModal.show();
 
-        // When Accept button is clicked
         document.getElementById("acceptDisclaimer").addEventListener("click", function () {
-          localStorage.setItem("disclaimerAccepted", "true");
+
+          // store current time
+          localStorage.setItem(disclaimerKey, new Date().getTime());
+
           disclaimerModal.hide();
         });
 
